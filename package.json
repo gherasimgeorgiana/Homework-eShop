@@ -1,0 +1,22 @@
+{
+  "name": "e-shop-gherasimgeorgiana",
+  "version": "1.0.0",
+  "description": "homework e-shop",
+  "main": "main.js",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIIT-WEBFRONTEND-29/e-shop-gherasimgeorgiana.git"
+  },
+  "author": "georgiana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SIIT-WEBFRONTEND-29/e-shop-gherasimgeorgiana/issues"
+  },
+  "homepage": "https://github.com/SIIT-WEBFRONTEND-29/e-shop-gherasimgeorgiana#readme",
+  "dependencies": {
+    "json-server": "^3.0.0"
+  }
+}

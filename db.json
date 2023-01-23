@@ -1,0 +1,90 @@
+{
+  "eShop": [
+    {
+      "description": "Air Tshirt Black",
+      "offers": "$45.99",
+      "price": "$69.74",
+      "images": "/e-shop-gherasimgeorgiana/resources/images/a1.png",
+      "id": 1
+    },
+    {
+      "description": "Next Blue Blazer",
+      "offers": "$99.99",
+      "price": "$100.71",
+      "images": "/e-shop-gherasimgeorgiana/resources/images/a2.png",
+        
+      "id": 2
+    },
+    {
+      "description": "Air Tshirt Black",
+      "offers": "$119.99",
+      "price": "$120.71",
+      "images": "/e-shop-gherasimgeorgiana/resources/images/a3.png",
+      "id": 3
+    },
+    {
+      "description": "Maroon Puma Tshirt",
+      "offers": "$79.99",
+      "price": "$120.71",
+      "images": "/e-shop-gherasimgeorgiana/resources/images/a4.png",
+      "id": 4
+    },
+    {
+      "description": "Multicoloured TShirts",
+      "offers": "$129.99",
+      "price": "$150.71",
+      "images": "/e-shop-gherasimgeorgiana/resources/images/a5.png",
+      "id": 5
+    },
+    {
+      "description": "Air Tshirt Black",
+      "offers": "$129.99",
+      "price": "$150.71",
+      "images": "/e-shop-gherasimgeorgiana/resources/images/a6.png",
+      "id": 6
+    },
+    {
+      "description": "Dresses",
+      "offers": "$129.99",
+      "price": "$150.71",
+      "images": "/e-shop-gherasimgeorgiana/resources/images/a7.png",
+      "id": 7
+    },
+    {
+      "description": "Wedding Blazers",
+      "offers": "$129.99",
+      "price": "$150.71",
+      "images": "/e-shop-gherasimgeorgiana/resources/images/a8.png",
+      "id": 8
+    },
+    {
+      "description": "Dresses",
+      "offers": "$45.99",
+      "price": "$150.71",
+      "images": "/e-shop-gherasimgeorgiana/resources/images/a9.png",
+      "id": 9
+    },
+    {
+      "description": "Shirts",
+      "offers": "$45.99",
+      "price": "$60.71",
+      "images": "/e-shop-gherasimgeorgiana/resources/images/a10.png",
+      "id": 10
+    },
+    {
+      "description": "Shirts",
+      "offers": "$45.99",
+      "price": "$60.71",
+      "images": "/e-shop-gherasimgeorgiana/resources/images/a11.png",
+      "id": 11
+    },
+    {
+      "description": "T Shirts",
+      "offers": "$45.99",
+      "price": "$60.71",
+      "images": "/e-shop-gherasimgeorgiana/resources/images/a12.png",
+      "id": 12
+    }
+    
+  ]
+}

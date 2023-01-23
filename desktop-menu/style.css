@@ -1,0 +1,385 @@
+:root {
+  --color-border: rgba(238, 238, 238, 1);
+  --color-top: rgba(153, 139, 154, 1);
+  --color-orange: rgba(253, 163, 14, 1);
+  --color-faborder: rgba(129, 129, 129, 1);
+  --color-grid2-background: rgba(247, 247, 247, 1);
+  --color-underline: rgba(198, 198, 198, 1);
+}
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  /*line-height: 1.5;*/
+  -webkit-font-smoothing: antialiased;
+
+}
+
+/*
+    6. Improve media defaults
+  */
+/* img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.logo {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  margin-top: 15px;
+  float: left;
+  margin-left: 5em;
+  margin-right: 30px;
+}
+
+.search-bar {
+  display: inline-flex;
+  margin-top: 30px;
+  font-size: 15px;
+  border: 1px solid var(--color-border);
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-top);
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+input {
+  width: 70%;
+  height: 2.5rem;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right-color: var(--color-border);
+  color: var(--color-top);
+  align-items: center;
+}
+
+select {
+  padding: 0;
+  width: 30%;
+  border: none;
+  color: var(--color-top);
+}
+
+.search-button {
+  border: var(--color-border);
+  background-color: var(--color-orange);
+  color: white;
+  height: 40px;
+  width: 40px;
+}
+
+.search-icons {
+  display: inline-flex;
+  list-style-type: none;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.search-icons>ul li {
+  display: inline-flex;
+  height: 20px;
+  width: 25px;
+  align-items: center;
+}
+
+.search-icons li>i {
+  width: 100%;
+  text-align: center;
+}
+
+.fa-icon {
+  border: 2px solid var(--color-faborder);
+  border-radius: 50%;
+  font-size: 10px;
+  color: var(--color-faborder);
+  margin-right: 3px;
+}
+
+.search-icons ul> :first-child {
+  color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
+section {
+  margin-bottom: 16px;
+}
+
+navbar .container {
+  background-color: black;
+  max-width: 1250px;
+  padding: 0 30px;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+}
+
+navbar {
+  display: flex;
+  background-color: black;
+  position: sticky;
+  width: 100%;
+  z-index: 999;
+  height: 80px;
+  font-family: sans-serif;
+}
+
+.container a {
+  color: white;
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 25px 25px;
+  display: flex;
+}
+
+.container a {
+  color: white;
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.navbar-links li {
+  list-style-type: none;
+}
+
+.container .navbar-links {
+  display: inline-flex;
+}
+
+.navbar-links li a:hover {
+  background: none;
+}
+
+.men-box {
+  position: absolute;
+  top: 85px;
+  background: black;
+  width: 60%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.navbar-links {
+  background: black;
+  top: 65px;
+  line-height: 15px;
+}
+
+.men-box .content {
+  background: white;
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+}
+
+.men-links li {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.row .men-links li a:hover {
+  color: black;
+}
+
+.content .row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content .row {
+  line-height: 35px;
+  color: white;
+}
+
+.row .men-links li {
+  padding: 0 5px;
+}
+
+.row .men-links li a {
+  padding: 0 20px;
+  color: var(--color-top);
+  font-size: 17px;
+  display: block;
+}
+
+.content .row .men-links {
+  margin-left: -40px;
+}
+
+.navbar-links li:hover .men-box {
+  top: 80px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.navbar-links li:hover .men-box {
+  top: 65;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.last-cart {
+  display: flex;
+  background-color: var(--color-orange);
+  padding: 20px;
+  font-size: 15px;
+  width: 15rem;
+  color: white;
+  height: 80px;
+  padding-left: 60px;
+  text-align: center;
+}
+
+.last-cart img {
+  padding-right: 5px;
+}
+
+
+.home {
+  border-bottom: 5px solid var(--color-orange);
+  font-size: 15px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.men {
+  border-bottom: 5px solid var(--color-orange);
+  font-size: 15px;
+  height: 80px;
+
+}
+
+.first-image {
+  display: flex;
+  margin-left: 12rem;
+  position: relative;
+}
+
+.first-header {
+  margin-top: 60px;
+  padding-bottom: 30px;
+ margin-left: 35rem;
+ font-family: sans-serif;
+}
+
+.first-header>span {
+  color: var(--color-orange);
+}
+
+.small-image {
+  position: absolute;
+  top: 17rem;
+  margin-left: 49.5em;
+  box-shadow: 0px 0px 0px 20px rgba(239, 224, 206, 0.7);
+}
+
+.small-buttons {
+  display: flex;
+  position: absolute;
+  top: 30rem;
+  margin-left: 50rem;
+}
+
+.small-buttons ul {
+  display: inline-flex;
+}
+
+.small-buttons ul>li {
+  width: 3.3rem;
+  list-style-type: none;
+}
+
+.small-circle {
+  display: flex;
+  position: absolute;
+  top: 32rem;
+  margin-left: 54rem;
+  color: white;
+
+}
+
+.small-circle ul {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.small-circle ul>li {
+  width: 12px;
+  font-size: 8px;
+}

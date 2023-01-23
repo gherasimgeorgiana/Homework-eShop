@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+
+    <link rel="stylesheet" href="./resources/fonts/glyphicons.css" type="text/css">
+    <link rel="stylesheet" href="./resources/fonts/glyphicons-halflings-regular.woff" type="text/css">
+    <link rel="stylesheet" href="./resources/fonts/glyphicons-halflings-regular.eot" type="text/css">
+
+    <script src="https://kit.fontawesome.com/7892ff7435.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th><img alt="" src="./resources/Men's wear_files/clock.png" /> Free and Fast Delivery</th>
+            <th><img alt="" src="./resources/Men's wear_files/cart.png" /> Free shipping On all Orders</th>
+            <th><img alt="" src="./resources/Men's wear_files/inbox1.png" /> info@example.com</th>
+        </tr>
+    </table>
+
+    <section>
+        <div class="logo">
+            <img class="logo" alt="" src="./resources/Men's wear_files/logo3.jpg" />
+        </div>
+
+        <!-- Search bar -->
+        <search class="search-bar">
+            <input type="text" placeholder="  Search">
+            <select name="categories" id="categories">
+                <option value="categories">All categories</option>
+                <option value="categories">Mean`s wear</option>
+                <option value="categories">Women`s wear</option>
+            </select>
+            <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+        </search>
+
+        <div class="search-icons">
+            <ul>
+                <li class="fa-icon"><i class="fa fa-user"></i></li>
+                <li class="fa-icon"><i class="fa fa-facebook-f"></i></li>
+                <li class="fa-icon"><i class="fa fa-twitter"></i></li>
+                <li class="fa-icon"><i class="fa fa-camera-retro"></i></li>
+                <li class="fa-icon"><i class="fa fa-youtube"></i></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Navbar -->
+    <navbar>
+        <div class="container">
+            <ul class="navbar">
+                <li class="menu">HOME</li>
+                <li class="menu">MEN`S WEAR</li>
+                <li class="menu">WOMEN`S WEAR</li>
+                <li class="menu">ELECTRONICS</li>
+                <li class="menu">SHORT CODES</li>
+                <li class="menu">CONTACT</li>
+                <li class="menu"><img alt="" src="./resources/Men's wear_files/cart-white.png.png" />$0.00 (0 items)<br>
+                    Empty Cart</br></li>
+            </ul>
+        </div>
+
+    </navbar>
+
+    <section>
+        <img class="first-image" src="./resources/images/ba3.jpg" />
+    </section>
+
+    <h1 class="first-header"><span>NEW</span> ARRIVALS</h1>
+    <p class="text1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+    </p>
+
+    <!-- First grid container -->
+    <section>
+        <div class="grid-container">
+
+            <!-- First column -->
+            <div class="grid-item item1"><img class="image1" src="./resources/images/wed1.jpg" />
+                <div class="details1">
+                    <p>WEEDING COLLECTIONS</p>
+                    <br>
+                    <p>Flat 50% Discount</p>
+                    <br>
+                    <p><del>$250</del> $500</p>
+                    <br>
+                    <button class="details-button-foto1">ADD TO CART</button>
+                </div>
+            </div>
+
+            <!-- Second column -->
+            <div class="grid-item item2"><img class="levis" src="./resources/images/levis1.png" />
+                <p class="details2">UP TO 40% <br> OFF</p>
+                <button class="details-button-levis">Shop now</button>
+            </div>
+
+            <div class="grid-item item3">
+                <p class="details3">UP TO 50% <br> OFF</p>
+                <img class="digjam" src="./resources/images/dig.jpg" />
+                <button class="details-button-digjam">Shop now</button>
+
+            </div>
+
+            <!-- Third column -->
+            <div class="grid-item item4"><img class="image2" src="./resources/images/wed2.jpg" />
+                <div class="details4">
+                    <p>SPRING / SUMMER</p>
+                    <br>
+                    <p>
+                        <font size="7">SHOP MEN</font>
+                    </p>
+                </div>
+            </div>
+    </section>
+    <!-- Second grid container -->
+    <section>
+        <div class="grid-container2">
+            <div class="col1">
+                <img class="img-col1" src="./resources/images/p1.jpg" />
+                <span class="details-grid12">
+                    <p> BUY 1 GET 1 FREE ON</p>
+                    <p>
+                        <font size="7" color="orange">BRANDED</font>
+                    </p>
+                    <p>WATCHES</p>
+                </span>
+            </div>
+
+            <div class="col2">
+                <span class="details-grid22">
+                    <p>SPECIAL OFFERS AND <br>50%</p>
+                    <p>
+                        <font size="7" color="orange">DISCOUNT ON</font>
+                    </p>
+                    <p>MOBILES</p>
+                </span>
+
+                <img class="img-col2" src="./resources/images/p2.jpg" />
+            </div>
+            <div class="col3">
+                <img class="img-col3" src="./resources/images/p4.jpg" />
+            </div>
+
+        </div>
+    </section>
+
+    <section class="heading">
+        <ul>
+            <li>Latest Designs</li>
+            <li>Special Offers</li>
+            <li>Collections</li>
+        </ul>
+    </section>
+
+    <section class="data-cards" data-cards></section>
+
+    <template id="eShop-cards">
+        <section class="card-img">
+            <img data-eShopImage />
+            <div class="card-details">
+                <p class="desc" data-eShopDescription></p>
+                <div class="prices">
+                    <p class="offers" data-eShopOffers></p>
+                    <p class="price" data-eShopPrice></p>
+
+                </div>
+                <button class="addToCart">Add to cart</button>
+            </div>
+
+        </section>
+    </template>
+
+    <!-- Footer -->
+    <section class="buy-product">
+        <img class="footer-img" src="/e-shop-gherasimgeorgiana/resources/images/new4.jpg" />
+        <div class="footer-details">
+            <p class="footer-buy">BUY YOUR PRODUCT <br /> IN A SIMPLE WAY</p>
+
+            <ul class="footer-list1">
+                <li><i class="fa fa-circle-user fa-5x"></i></li>
+                <li>LOGIN TO YOUR ACCOUNT</li>
+                <li>Neque porro quisquam est, qui dolorem <br /> ipsum quia dolor sit ament, consectetur.</li>
+            </ul>
+
+            <ul class="footer-list2">
+                <li><i class="fa-regular fa-circle-check fa-5x"></i></li>
+                <li>SELECT YOUR ITEM</li>
+                <li>Neque porro quisquam est, qui dolorem <br /> ipsum quia dolor sit ament, consectetur.</li>
+            </ul>
+
+            <ul class="footer-list3">
+                <li><i class="fa-solid fa-credit-card fa-5x"></i></li>
+                <li>MAKE PAYMENT</li>
+                <li>Neque porro quisquam est, qui dolorem <br /> ipsum quia dolor sit ament, consectetur.</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="logo1">
+            <img class="logo1" alt="" src="./resources/Men's wear_files/logo3.jpg" />
+        </div>
+
+        <div class="signUp">SIGN UP FOR NEWSLETTER!</div>
+
+        <div class="email">
+            <input type="text" placeholder=" Email" />
+            <button class="email-button" type="email">SUBMIT</button>
+        </div>
+    </section>
+
+    <section class="footer-container">
+        <p class="description">Neque porro quisquam est, qui dolorem <br /> ipsum quia dolor sit ament, consectetur,
+            <br />adipisci velit, sed quia non numquam <br />eius modi tempora incidunt ut labore et <br />dolore magnam
+            aliquam quaerat <br />voluptatem.
+        </p>
+
+        <ul class="information">
+            <li>Information</li>
+            <li>Home</li>
+            <li>Men`s Wear</li>
+            <li>Women`s Wear</li>
+            <li>Electronics</li>
+            <li>Short Codes</li>
+            <li>Contact</li>
+        </ul>
+
+        <ul class="store-info">
+            <li> Store Information</li>
+            <li><img src="./resources/Men's wear_files/location.png" /> Address : 1234k Avenue, 4th </li>
+            <li>block, Newyork City.</li>
+            <li><img src="./resources/Men's wear_files/inbox.png" /> Email : info@example.com</li>
+            <li><img src="./resources/Men's wear_files/phone.png" /> Phone : +1234 567 567</li>
+        </ul>
+
+        <ul class="posts">
+            <li>Flickr Posts</li>
+            <div class="footer-container-image">
+                <img class="post-img" src="./resources/images/e1.jpg" />
+                <img class="post-img" src="./resources/images/men21.jpg" />
+                <img class="post-img" src="./resources/images/p1.jpg" />
+                <img class="post-img" src="./resources/images/p2.jpg" />
+                <img class="post-img" src="./resources/images/e1.jpg" />
+                <img class="post-img" src="./resources/images/men21.jpg" />
+                <img class="post-img" src="./resources/images/p1.jpg" />
+                <img class="post-img" src="./resources/images/p2.jpg" />
+                <img class="post-img" src="./resources/images/e1.jpg" />
+            </div>
+        </ul>
+
+    </section>
+
+    <footer class="rights">
+        <p>© 2016 Smart Shop. All rights reserved | Design by W3layouts</p>
+    </footer>
+
+</body>
+
+</html>
